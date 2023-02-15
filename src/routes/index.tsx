@@ -1,13 +1,11 @@
-import { Routes, Route, useLocation } from 'react-router-dom'
-import { SignIn } from '../pages/sign-in'
+import { Routes, Route } from 'react-router-dom'
+import { Login } from '../pages/Login/login';
 
 
 export const AppRoutes: React.FC = () => {
     return(
         <Routes>
-            <Route path='signin' element = {<SignIn />} />
-            {/* <Route path='login' />
-            <Route path='home' /> */}
+            <Route path='/login' element = {<Login />} />
         </Routes>
     )
 }
